@@ -9,7 +9,6 @@ private:
 public:
 	Book(char* title, int cost, int stock);
 	void displayBookDetails();
-	//void searchForBook(char* title, int quantity);
 	char* getBookTitle();
 	int   getBookCost();
 	int   getBookStock();

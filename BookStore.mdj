@@ -251,13 +251,81 @@
 											"height": 13,
 											"text": "+searchForBook(char* title, int quantity): void",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGB9ft85rsPAyE=",
+											"_parent": {
+												"$ref": "AAAAAAGB82ZNPCBijMo="
+											},
+											"model": {
+												"$ref": "AAAAAAGB9ft8x7sMlPE="
+											},
+											"font": "Arial;13;0",
+											"left": 165,
+											"top": 258,
+											"width": 259.7587890625,
+											"height": 13,
+											"text": "+getBookTitle(): string",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGB9fv3ursYSFU=",
+											"_parent": {
+												"$ref": "AAAAAAGB82ZNPCBijMo="
+											},
+											"model": {
+												"$ref": "AAAAAAGB9fv3q7sV2sI="
+											},
+											"font": "Arial;13;0",
+											"left": 165,
+											"top": 273,
+											"width": 259.7587890625,
+											"height": 13,
+											"text": "+getBookStock(): int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGB9fxANbshy+k=",
+											"_parent": {
+												"$ref": "AAAAAAGB82ZNPCBijMo="
+											},
+											"model": {
+												"$ref": "AAAAAAGB9fxAJ7senV0="
+											},
+											"font": "Arial;13;0",
+											"left": 165,
+											"top": 288,
+											"width": 259.7587890625,
+											"height": 13,
+											"text": "+getBookCost(): int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGB9fyeBbsq0yw=",
+											"_parent": {
+												"$ref": "AAAAAAGB82ZNPCBijMo="
+											},
+											"model": {
+												"$ref": "AAAAAAGB9fyd97snaEg="
+											},
+											"font": "Arial;13;0",
+											"left": 165,
+											"top": 303,
+											"width": 259.7587890625,
+											"height": 13,
+											"text": "+setBookStock(int stock): void",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 160,
 									"top": 208,
 									"width": 269.7587890625,
-									"height": 53
+									"height": 113
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -293,7 +361,7 @@
 							"left": 160,
 							"top": 128,
 							"width": 269.7587890625,
-							"height": 133,
+							"height": 193,
 							"nameCompartment": {
 								"$ref": "AAAAAAGB82ZNOyBcDrU="
 							},
@@ -376,7 +444,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGB82jh4SCeicg="
 									},
-									"name": "char* title"
+									"name": "char* title",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -384,7 +453,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGB82jh4SCeicg="
 									},
-									"name": "int cost"
+									"name": "int cost",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -392,7 +462,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGB82jh4SCeicg="
 									},
-									"name": "int stock"
+									"name": "int stock",
+									"type": ""
 								}
 							]
 						},
@@ -449,6 +520,91 @@
 									},
 									"name": "int quantity",
 									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGB9ft8x7sMlPE=",
+							"_parent": {
+								"$ref": "AAAAAAGB82ZNOSBZpo4="
+							},
+							"name": "getBookTitle",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGB9fvZg7sTXdw=",
+									"_parent": {
+										"$ref": "AAAAAAGB9ft8x7sMlPE="
+									},
+									"type": "string",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGB9fv3q7sV2sI=",
+							"_parent": {
+								"$ref": "AAAAAAGB82ZNOSBZpo4="
+							},
+							"name": "getBookStock",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGB9fwtp7scMYQ=",
+									"_parent": {
+										"$ref": "AAAAAAGB9fv3q7sV2sI="
+									},
+									"type": "int",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGB9fxAJ7senV0=",
+							"_parent": {
+								"$ref": "AAAAAAGB82ZNOSBZpo4="
+							},
+							"name": "getBookCost",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGB9fyFrLslxeg=",
+									"_parent": {
+										"$ref": "AAAAAAGB9fxAJ7senV0="
+									},
+									"type": "int",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGB9fyd97snaEg=",
+							"_parent": {
+								"$ref": "AAAAAAGB82ZNOSBZpo4="
+							},
+							"name": "setBookStock",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGB9fz/WbsuXWc=",
+									"_parent": {
+										"$ref": "AAAAAAGB9fyd97snaEg="
+									},
+									"name": "int stock",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGB9fz/WbsvvD0=",
+									"_parent": {
+										"$ref": "AAAAAAGB9fyd97snaEg="
+									},
+									"type": "void",
+									"direction": "return"
 								}
 							]
 						}

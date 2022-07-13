@@ -25,7 +25,7 @@ int main()
         cin >>input;
         switch(input) {
             case 1:
-                cout<<"Version : 0.1"<<endl;
+                cout<<"Version : 1.0"<<endl;
                 break;
             case 2:
                 for(i = 0; i < 3; i++)
