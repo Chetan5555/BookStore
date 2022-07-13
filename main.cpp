@@ -51,7 +51,7 @@ int main()
                 	cout<<"Book for the specified title does not exist"<<endl;
                 break;
             default:
-                exit(0);
+                return 0;
             	break;
         }
 	}
