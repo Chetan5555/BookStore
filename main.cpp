@@ -35,7 +35,7 @@ int main()
                 b.addBook();
                 break;
             default:
-                exit(0);
+                return 0;
             	break;
         }
 	}
