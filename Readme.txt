@@ -5,6 +5,7 @@ Version : 2.0
 Supported Features:
 
 V2.0
+1. Version is updated
 
 V1.0
 1. Supports Version display
