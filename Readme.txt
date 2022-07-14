@@ -1,8 +1,11 @@
 ReadMe:
 
-Version : 2.0 
+Version : 3.0 
 
 Supported Features:
+
+V3.0
+1. Supports adding Technical and Management Books.
 
 V2.0
 1. Added support for adding Books to Bookstore.
