@@ -13,31 +13,62 @@ Bookstore::Bookstore()
 
 void Bookstore::addBook()
 {
+	int input;
+	cout<<"Enter 1: to add Technical Book\n2: to add Management Book"<<endl;
+    cin >>input;
+    if((input > 2) || (input < 1) ) {
+        cout <<"Invalid Input"<<endl;
+        return;
+    }
+
 	cout << "Enter Book Title, Price, Quantity";
 	int price, quantity, i;
 	bool index = -1;
 	char title[10];
 	cin >> title >> price >> quantity;
-	for(i = 0; i < 4; i++) {
-		if(NULL == books[i]) {
-			if(-1 != index)
-				index = i;
-		}
-		else if(0 == strcmp(title, books[i]->getBookTitle())) {
-            books[i]->setBookStock(books[i]->getBookStock() + quantity);
-            cout << "Book with the title already Exist. Updated stocks"<<endl;
-            return;
-		}
-	}
-	if(-1 == index) {
-		cout << "No space in Book Store" <<endl;
-	}
-	else {
-		books[index] = new Book(title, price, quantity);
-		cout << "New Book added Successfully" <<endl;
-		bookCount++;
-	}
 
+    if(1 == input) {
+		for(i = 0; i < 4; i++) {
+			if(NULL == books[i]) {
+				if(-1 != index)
+					index = i;
+			}
+			else if(0 == strcmp(title, books[i]->getBookTitle())) {
+				books[i]->setBookStock(books[i]->getBookStock() + quantity);
+				cout << "Book with the title already Exist. Updated stocks"<<endl;
+				return;
+			}
+		}
+		if(-1 == index) {
+			cout << "No space in Book Store" <<endl;
+		}
+		else {
+			books[index] = new TechnicalBook(title, price, quantity);
+			cout << "New Technical Book added successfully" <<endl;
+			bookCount++;
+		}
+    }
+    else if(2 == input) {
+		for(i = 0; i < 4; i++) {
+			if(NULL == books[i]) {
+				if(-1 != index)
+					index = i;
+			}
+			else if(0 == strcmp(title, books[i]->getBookTitle())) {
+				books[i]->setBookStock(books[i]->getBookStock() + quantity);
+				cout << "Book with the title already Exist. Updated stocks"<<endl;
+				return;
+			}
+		}
+		if(-1 == index) {
+			cout << "No space in Book Store" <<endl;
+		}
+		else {
+			books[index] = new ManagementBook(title, price, quantity);
+			cout << "New Management Book added successfully" <<endl;
+			bookCount++;
+		}
+    }
 }
 
 void Bookstore::displayBooks()
