@@ -1,10 +1,11 @@
 #ifndef BOOKSTORE_H
 #define BOOKSTORE_H
 #include"Book.h"
+#include"ManagementBook.h"
+#include"TechnicalBook.h"
 
 class Bookstore {
 private:
-	int bookCount;
 	Book* books[4];
 public:
 	Bookstore();

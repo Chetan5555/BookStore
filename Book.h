@@ -1,5 +1,9 @@
 #ifndef BOOK_H
 #define BOOK_H
+
+#include<iostream>
+using namespace std;
+
 class Book {
 private:
 	char* bookTitle;
@@ -8,11 +12,11 @@ private:
 
 public:
 	Book(char* title, int cost, int stock);
-	void displayBookDetails();
+	virtual void displayBookDetails();
 	char* getBookTitle();
 	int   getBookCost();
 	int   getBookStock();
 	void  setBookStock(int stock);
-	~Book();
+	virtual ~Book();
 };
 #endif
