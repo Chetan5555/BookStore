@@ -6,6 +6,7 @@ private:
 	int discount;
 public:
 	ManagementBook(char* title, int cost, int stock);
+	virtual void displayBookDetails();
 	int getDiscount();
 	~ManagementBook();
 };

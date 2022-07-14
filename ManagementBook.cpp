@@ -4,6 +4,12 @@ ManagementBook::ManagementBook(char* title, int cost, int stock):Book(title, cos
 {
 }
 
+void ManagementBook::displayBookDetails()
+{
+	Book::displayBookDetails();
+	cout <<"Discount : "<<discount<<endl;
+}
+
 int ManagementBook::getDiscount()
 {
 	return discount;

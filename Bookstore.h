@@ -6,7 +6,6 @@
 
 class Bookstore {
 private:
-	int bookCount;
 	Book* books[4];
 public:
 	Bookstore();
