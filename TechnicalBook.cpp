@@ -4,6 +4,12 @@ TechnicalBook::TechnicalBook(char* title, int cost, int stock):Book(title, cost,
 {
 }
 
+void TechnicalBook::displayBookDetails()
+{
+	Book::displayBookDetails();
+	cout <<"Discount : "<<discount<<endl;
+}
+
 int TechnicalBook::getDiscount()
 {
 	return discount;
