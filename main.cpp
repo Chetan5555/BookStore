@@ -23,7 +23,7 @@ int main()
         cin >>input;
         switch(input) {
             case 1:
-                cout<<"Version : 3.0"<<endl;
+                cout<<"Version : 4.0"<<endl;
                 break;
             case 2:
                 b.displayBooks();

@@ -1,8 +1,12 @@
 ReadMe:
 
-Version : 3.0 
+Version : 4.0 
 
 Supported Features:
+
+V4.0
+1. Restrication for adding Books to Book Store is removed.
+2. List is introduced.
 
 V3.0
 1. Supports adding Technical and Management Books.
