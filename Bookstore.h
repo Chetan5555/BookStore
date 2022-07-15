@@ -6,7 +6,6 @@
 #include<list>
 class Bookstore {
 private:
-	// Book* books[4];
 	list<Book*> books;
 public:
 	Bookstore();
