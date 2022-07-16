@@ -8,6 +8,6 @@ public:
 	TechnicalBook(char* title, int cost, int stock);
 	virtual void displayBookDetails();
 	int getDiscount();
-	~TechnicalBook();
+	virtual ~TechnicalBook();
 };
 #endif

@@ -3,10 +3,19 @@
 #include"Book.h"
 #include"ManagementBook.h"
 #include"TechnicalBook.h"
-#include<list>
+#include<map>
+
+struct cmp_str
+{
+   bool operator()(char const *a, char const *b) const
+   {
+      return std::strcmp(a, b) < 0;
+   }
+};
+
 class Bookstore {
 private:
-	list<Book*> books;
+	map<char*, Book*, cmp_str> books;
 public:
 	Bookstore();
 	void addBook();

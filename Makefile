@@ -10,7 +10,7 @@ book.o: Book.cpp Book.h
 	g++ -c Book.cpp -o book.o
 
 bookstore.o: Bookstore.cpp Bookstore.h
-	g++ -c Bookstore.cpp -o bookstore.o
+	g++ -std=c++11 -c Bookstore.cpp -o bookstore.o
 
 technicalbook.o: TechnicalBook.cpp TechnicalBook.h
 	g++ -c TechnicalBook.cpp -o technicalbook.o
