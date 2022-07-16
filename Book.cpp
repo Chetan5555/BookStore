@@ -5,7 +5,7 @@ using namespace std;
 
 Book::Book(char* title, int cost, int stock):bookTitle(new char[strlen(title)+1]),bookCost(cost), bookStock(stock)
 {
-	strcpy(bookTitle, title);
+	strcpy_s(bookTitle, strlen(title)+1, title);
 	bookTitle[strlen(title)] = '\0';
 }
 

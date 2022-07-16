@@ -2,24 +2,23 @@
 #include<cstring>
 using namespace std;
 
-#include"Book.h"
 #include"Bookstore.h"
 
 void menu()
 {
-	cout<<"Enter"<<endl;
-	cout<<"1: Version"<<endl;
-	cout<<"2: Display Books"<<endl;
-	cout<<"3: Search For Book"<<endl;
+    cout<<"Enter"<<endl;
+    cout<<"1: Version"<<endl;
+    cout<<"2: Display Books"<<endl;
+    cout<<"3: Search For Book"<<endl;
     cout<<"4: Add Book"<<endl;
 }
 int main()
 {
-	int input;
-	Bookstore b;
+    int input;
+    Bookstore b;
 
-	while(1) {
-		menu();
+    while(1) {
+        menu();
         cin >>input;
         switch(input) {
             case 1:
@@ -36,7 +35,7 @@ int main()
                 break;
             default:
                 return 0;
-            	break;
+                break;
         }
-	}
+    }
 }

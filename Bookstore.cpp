@@ -20,7 +20,7 @@ void Bookstore::addBook()
     }
 
 	cout << "Enter Book Title, Price, Quantity";
-	int price, quantity, i;
+	int price, quantity;
 	char title[10];
 	cin >> title >> price >> quantity;
 
@@ -85,6 +85,7 @@ void Bookstore::displayBooks()
     }
     else {
     	cout << "Invalid option"<<endl;
+    	return;
     }
 
     if(0 == displayedBooks) {
@@ -96,11 +97,11 @@ void Bookstore::displayBooks()
 void Bookstore::searchBook()
 {
 	char title[10];
-	int quantity,i;
+	int quantity;
 
     cout<<"Enter title and Quantity : "<<endl;
     cin>>title>>quantity;
-    int billingCost = 0;
+    double billingCost = 0;
 
 	for(auto book : books) {
 		if(NULL != book) {
